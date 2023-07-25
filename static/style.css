@@ -1,0 +1,163 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: rgba(246, 246, 246, 0.808);
+  width: 100%;
+  height: 100%;
+}
+
+h3{
+  display: block;
+  font-size:larger;
+  font-weight: bolder;
+  padding-left: 40px;
+  padding-top: 60px;
+  
+}
+/*index*/
+.card{
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 520px;
+  overflow:hidden;
+  margin: 15px;
+  box-shadow: 5px 5px 10px rgba(151, 151, 254, 0.83);
+
+}
+h2{
+  margin-top:25px;
+  color:rgba(162, 124, 197, 0.858);
+  border-bottom-style:solid ;
+}
+.carousel-item{
+  position: relative;
+  width: 100%;;
+  float: left;
+  backface-visibility: hidden;
+
+}
+.bolum1{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+text-align: center;
+}
+p{
+  color: rgba(62, 61, 61, 0.782);
+}
+a{
+  text-decoration: none;
+  color: black;
+  
+}
+.background{
+background-color: white;
+width: 90%;
+margin: auto;
+border-radius: 20px;
+
+}
+.card  a:hover{
+  background-color:rgba(143, 143, 255, 0.862);
+  color: white;
+}
+
+/* neyenir.html */
+.container-1 {
+  width: 70%;
+  height: 530px;
+  margin-left: 170px;
+  padding-top: 15px;
+  overflow: hidden;
+ 
+}
+.restoran img{
+  margin-left: 200px;
+  padding: 15px;
+}
+
+/*harita*/
+iframe{
+  margin-left: 350px;
+}
+/*plajlar*/
+.card h5{
+  text-align: center;
+  color: rgb(132, 132, 222);
+}
+.beach img{
+  margin-left: 200px;
+}
+
+.yazi{
+  border-bottom: 2px double blue;
+}
+/* footer stillendirme */
+.footer{
+  background-color: rgba(204, 204, 204, 0.821);
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: 25px;
+}
+.footer-content{
+  max-width: 1170px;
+  margin: auto;
+}
+ul{
+  list-style: none;
+}
+.footer-col{
+  width: 25%;
+  padding:15px;
+
+}
+.footer-col h4{
+  text-decoration: underline;
+  font-size: 18px;
+  color: rgb(100, 99, 99);
+  margin-bottom: 30px;
+  font-weight: 400;
+  position: relative;
+  margin-left: 150px;
+}
+
+.sosyal-medya .fa-brands{
+  background-color: rgb(255, 255, 255);
+  width: 35px;
+  height: 35px;
+  border-radius: 10px;
+  
+}
+.footer-col ul li a{
+  color: rgb(100, 99, 99);
+  display: block;
+  font-weight: 250;
+  margin-left: 100px;
+}
+#carouselExampleIndicators{
+  max-height: 600px !important;
+}
+.carousel-item img{
+  max-height: 600px !important;
+}
+/* responsive */
+@media(max-width:767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media(max-width:547px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}

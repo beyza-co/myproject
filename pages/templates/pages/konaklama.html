@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+{% load static %}
+
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="background">
+
+<div class="container">
+  <h2 style="text-align: center; padding-top: 25px;"><b>DENİZ KOKULU KAŞ OTELLERİ</b></h2>
+    <img src="/static/img/kas-otelleri-antalya-1155x675.jpg" width="80%" height="600" style="padding: 20px; margin-left: 100px;" alt="">
+</div>
+
+<div class="row">
+
+  {% for hotel in pages  %}
+  <div class="col">
+<h3>{{hotel.title}}</h3>
+<div class="card " style="width: 25rem;;">
+    <img src="{{hotel.image.url}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text">
+      {{hotel.body}}
+       </p>
+    </div>
+  </div>
+</div>
+
+ {% endfor %}
+
+</div>
+</div>
+{% endblock content %}

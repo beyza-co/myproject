@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'style.css' %}"">
+{% endblock %}
+
+{% block content %}
+<div class="background">
+  <div class="container">
+    <h2 style="text-align: center; padding-top:25px;">EN GÜZEL KAŞ RESTORANLARI</h2>
+      <img style="padding-left: 50px;" src="/static/img/loop-kas-bar-restoran-1155x675.jpg" alt="">
+  </div>
+
+    {% for restaurant in pages  %}
+  <div class="restoranlar">
+    <h3>{{restaurant.title}}</h3>
+    <p class="restoran">
+      <img width="850" height="500" src="{{restaurant.image.url}}" alt="">
+      
+    </p>
+    <p class="restoran">
+      <br>
+    {{restaurant.body}}
+    </p>
+    <div class="yazi"></div>
+  </div>
+    {% endfor %}
+
+</div>
+  {% endblock content %}

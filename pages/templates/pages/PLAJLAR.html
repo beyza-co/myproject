@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% load static %}
+
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'style.css' %}"">
+{% endblock %}
+
+{% block content %}
+<div class="background">
+<div class="beaches">
+  <h2 style="text-align: center;">KAŞ'IN EN GÜZEL PLAJLARINI SİZLER İÇİN DERLEDİK</h2>
+  
+ {% for beach in pages %}
+  
+  <h3>{{beach.title}}</h3>
+  <p class="beach">
+    <img width="850" height="500" src="{{beach.image.url}}" alt="">
+  </p>
+  <p class="beach">
+    <br>
+ {{beach.body}}
+ </p>
+  <div class="yazi"></div>
+
+  {% endfor %}
+</div>
+</div>
+
+
+{% endblock content %}
